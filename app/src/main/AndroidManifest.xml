@@ -13,6 +13,20 @@
         android:theme="@style/Theme.GridListView"
         tools:targetApi="31">
         <activity
+            android:name=".GridFullImageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GridActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AdvancedListActivity"
             android:exported="false">
             <meta-data
