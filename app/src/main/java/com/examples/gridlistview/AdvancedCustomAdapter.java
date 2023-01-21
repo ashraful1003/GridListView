@@ -13,6 +13,7 @@ public class AdvancedCustomAdapter extends BaseAdapter {
     ArrayList<AdvancedListItem> list;
     Context context;
 
+    /// constructor
     AdvancedCustomAdapter(Context context, ArrayList<AdvancedListItem> list) {
         this.list = list;
         this.context = context;
@@ -45,9 +46,9 @@ public class AdvancedCustomAdapter extends BaseAdapter {
         location = view.findViewById(R.id.location);
 
         AdvancedListItem model = list.get(i);
-        name.setText(model.getName());
-        designation.setText(model.getDesignation());
-        location.setText(model.getLocation());
+        name.setText("Name: " + model.getName());
+        designation.setText("Designation: " + model.getDesignation());
+        location.setText("Location: " + model.getLocation());
 
         return view;
     }

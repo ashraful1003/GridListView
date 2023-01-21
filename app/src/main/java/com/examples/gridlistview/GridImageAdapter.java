@@ -23,6 +23,7 @@ public class GridImageAdapter extends BaseAdapter {
             R.drawable.img9,
             R.drawable.img10,
             R.drawable.img11,
+            R.drawable.img12,
             R.drawable.img1,
             R.drawable.img3,
             R.drawable.img5,
@@ -34,8 +35,10 @@ public class GridImageAdapter extends BaseAdapter {
             R.drawable.img6,
             R.drawable.img8,
             R.drawable.img10,
+            R.drawable.img12,
     };
 
+    /// constructor
     public GridImageAdapter(Context context) {
         this.context = context;
     }
@@ -55,9 +58,11 @@ public class GridImageAdapter extends BaseAdapter {
         return 0;
     }
 
+    /// main topic
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ImageView imageView = new ImageView(context);
+        /// image size
         imageView.setLayoutParams(new ViewGroup.LayoutParams(300, 300));
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setPadding(8, 8, 8, 8);

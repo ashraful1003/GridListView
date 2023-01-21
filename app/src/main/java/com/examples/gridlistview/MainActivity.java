@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         /// if you want to show the grid view then just remove the comment from the
         // the below line.
-//        startActivity(new Intent(MainActivity.this, GridActivity.class));
+        startActivity(new Intent(MainActivity.this, GridActivity.class));
 
         listView = findViewById(R.id.list_view);
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, users);
